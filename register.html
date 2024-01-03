@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro - Onotera Chess</title>
+  <link rel="stylesheet" href="styles/inicio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-firestore.js"></script> <!-- Importe a biblioteca de ícones Font Awesome -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Onotera - Chess</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <!-- Adicione mais itens de menu conforme necessário -->
+      </ul>
+    </nav>
+    <div class="user-icon" onclick="redirectUser()">
+      <i class="fas fa-user-circle"></i>
+      <span id="username">Convidado</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="register-section">
+      <h2>Registro</h2>
+      <form id="registerForm">
+        <label for="new-username"> <i class="fas fa-user"></i> <!-- Ícone do usuário -->Nome de Usuário </label>
+        <input type="text" id="nickname" placeholder="Nickname" required>
+        <label for="new-email"><i class="fas fa-envelope"></i> <!-- Ícone de cadeado --> E-mail</label>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <label for="new-password"> <i class="fas fa-lock"></i> <!-- Ícone de cadeado --> Senha</label>
+       <input type="password" id="password" placeholder="Senha" maxlength="20" required>
+       <input type="password" id="confirmPassword" placeholder="Confirmar Senha" maxlength="20" required>
+
+
+
+        <button type="submit">Registrar</button>
+      </form>
+
+      <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Onotera - Xadrez</p>
+  </footer>
+
+ 
+</body>
+</html>

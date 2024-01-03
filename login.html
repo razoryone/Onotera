@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Onotera Chess</title>
+  <link rel="stylesheet" href="styles/inicio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+  
+  <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.9/firebase-firestore.js"></script><!-- Importe a biblioteca de ícones Font Awesome -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Onotera - Xadrez</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <!-- Adicione mais itens de menu conforme necessário -->
+      </ul>
+    </nav>
+    <div class="user-icon" onclick="redirectUser()">
+      <i class="fas fa-user-circle"></i>
+      <span id="username">Convidado</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="login-section">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">
+          <i class="fas fa-user"></i> <!-- Ícone do usuário -->
+          E-mail
+        <input type="email" id="loginEmail" placeholder="E-mail" required>
+
+        <label for="password">
+          <i class="fas fa-lock"></i> <!-- Ícone de cadeado -->
+          Senha
+        </label>
+       
+        <!-- Campo de senha com limite de caracteres e ícone de visualização -->
+        <input type="password" id="password" placeholder="Senha" maxlength="20" required>
+        <i class="fa-solid fa-eye eye toggle-password"></i>
+
+
+        <button type="submit">Entrar</button>
+      </form>
+      <p>Ainda não tem uma conta? <a href="register.html">Registre-se</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Onotera - Xadrez</p>
+  </footer>
+
+
+
+</body>
+</html>

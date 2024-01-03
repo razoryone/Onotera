@@ -1,0 +1,218 @@
+/* Estilos anteriores mantidos aqui */
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #6e42c1, #4e4e4e);
+  color: #ffffff;
+}
+
+header {
+  background-color: rgba(78, 78, 78, 0.8);
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+header h1:hover {
+  transform: scale(1.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #6e42c1;
+  transform: scale(1.1);
+}
+
+/* Estilos dos botões de navegação */
+section {
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Seção sobre xadrez */
+.about {
+  background-color: rgba(78, 78, 78, 0.8);
+}
+
+.about h2 {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.about p {
+  color: #cccccc;
+}
+
+/* Seção de mestres do xadrez */
+.chess-masters {
+  background-color: rgba(110, 66, 193, 0.9);
+  text-align: center;
+  font-size: 0.6em;
+}
+
+.chess-masters h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Destaque nos nomes dos mestres */
+.master h3 {
+  color: #ffcc00;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.master h3:hover {
+  transform: scale(1.1);
+}
+
+.master img {
+  max-width: 50%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de escala ao passar o mouse sobre a imagem */
+.master img:hover {
+  transform: scale(1.1);
+}
+
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #6e42c1;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de escala ao passar o mouse sobre o botão */
+.cta-button:hover {
+  transform: scale(1.05); 
+  background-color: #dba800;
+  }
+
+/* Estilos específicos para a seção de herói */
+.hero {
+  background-image: url('/imagens/wallpaperhero.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  backdrop-filter: 40%;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero h2,
+.hero p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto */
+}
+
+/* Estilos da área de redes sociais */
+.social {
+  background-color: #4e4e4e;
+  padding: 40px;
+  text-align: center;
+}
+
+.social h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.social-icons {
+  font-size: 1.6em;
+  padding-top: 0%;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.social-icons a:hover {
+  color: #6e42c1;
+}
+
+.social-icons {
+  margin-top: -15px; /* Move os ícones para cima usando margem negativa */
+}
+
+/* Estilos para o ícone do usuário */
+.user-icon {
+  position: fixed;
+  top: 20px; /* Ajuste a distância do topo conforme necessário */
+  left: 20px; /* Ajuste a distância da esquerda conforme necessário */
+  z-index: 999; /* Garante que o ícone fique acima dos outros elementos */
+}
+
+.user-icon i {
+  font-size: 2.5em; /* Tamanho do ícone */
+  color: #6e42c1; /* Cor do ícone */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Adicionando efeito de transição */
+}
+
+/* Efeito de escala e mudança de cor ao passar o mouse sobre o ícone */
+.user-icon i:hover {
+  transform: scale(1.1); /* Aumenta em 10% */
+  color: #d18f00; /* Altera a cor ao passar o mouse */
+}
